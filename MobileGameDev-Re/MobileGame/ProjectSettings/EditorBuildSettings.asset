@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: e30fed4425252c94bb925c5977df1531
+  - enabled: 1
+    path: Assets/Scenes/PongetGame.unity
+    guid: abde66c317aba5f44af64116e3ed787e
+  - enabled: 1
+    path: Assets/Scenes/RockInvaders.unity
+    guid: 922c414e38763404daa4d370afca5268
+  - enabled: 1
+    path: Assets/Scenes/TDPenguins.unity
+    guid: 5b5bb7688ec6de54f9734488d30acad9
+  - enabled: 1
+    path: Assets/Scenes/ThatWormGame.unity
+    guid: 928ad3fc9a0dc214ca01e611c4afa0bd
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 4be641899ba7a7340b66ee9b39168bc6,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: be8acad38079c2243b6623f15f8184aa,
+      type: 2}
