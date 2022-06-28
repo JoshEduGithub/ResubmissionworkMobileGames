@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.EventSystems;
 
 public class UserInterface : MonoBehaviour
 {
 
     public static bool paused;
+    static float Player1Score;
+    static float Player2Score;
+    public TextMeshProUGUI ScoreText;
+    public TextMeshProUGUI ScoreText2;
     [TooltipAttribute("Reference to the pause menu game object in the scene")]
     // getting the pause menu game object to interact with TMPbuttons and enable toggling of visiblity through code
     public GameObject pauseMenu;
@@ -62,4 +69,18 @@ public class UserInterface : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndx);
     }
 
+    public void ScoreCount(int Score)
+    {
+        Player1Score+= Score;
+        
+        ScoreText.text = "" + Player1Score;
+    }
+
+    public void ScoreCount2(int Score2)
+    {
+       
+        Player2Score+= Score2;
+        
+        ScoreText2.text = "" + Player2Score;
+    }
 }

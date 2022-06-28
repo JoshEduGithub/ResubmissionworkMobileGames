@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ponget
+  - RockInvaders
+  - TDNotMonkeys
+  - ThatWormGame
+  - PongPlayer1Goal
+  - PongPlayer2Goal
   layers:
   - Default
   - TransparentFX

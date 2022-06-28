@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Tutorial demonstrating the use of code to manage notches on mobile devices
+// by creating a screen safe area.
+// Chapter 4 slide 60
+// Chapter 4 : Resolution-Independent UI
+// CMP6187 – Mobile Game Development
+
 public class UISafeAreaHandler : MonoBehaviour
 {
     RectTransform panel;

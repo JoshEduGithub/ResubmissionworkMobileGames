@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: e30fed4425252c94bb925c5977df1531
+  - enabled: 1
+    path: Assets/Scenes/PongetGame.unity
+    guid: abde66c317aba5f44af64116e3ed787e
+  - enabled: 1
+    path: Assets/Scenes/RockInvaders.unity
+    guid: 922c414e38763404daa4d370afca5268
+  - enabled: 1
+    path: Assets/Scenes/TDPenguins.unity
+    guid: 5b5bb7688ec6de54f9734488d30acad9
+  - enabled: 1
+    path: Assets/Scenes/ThatWormGame.unity
+    guid: 928ad3fc9a0dc214ca01e611c4afa0bd
   m_configObjects: {}
