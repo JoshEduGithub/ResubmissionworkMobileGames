@@ -29,7 +29,7 @@ public class PlayerScripts : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector3(0,rb.velocity.y,horizontalMove);
+        rb.velocity = new Vector3(horizontalMove,rb.velocity.y,0);
     }
     public void up()
     {

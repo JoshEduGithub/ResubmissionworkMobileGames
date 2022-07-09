@@ -7,8 +7,16 @@ public class ScoreScript : MonoBehaviour
 
     public UserInterface Score;
     public UserInterface Score2;
-
     public GameObject ball;
+    public GameObject ballSpawner;
+    private Vector3 ballSpawnerPos;
+
+    private void Awake()
+    {
+        ballSpawnerPos = ballSpawner.transform.position;
+    }
+    
+
 
     void OnTriggerEnter(Collider col)
     {
@@ -16,14 +24,15 @@ public class ScoreScript : MonoBehaviour
         {
             
             Score.ScoreCount(+1);
-            ball.transform.position = new Vector3(0,-5.1500001f,27.5f);
+            // respawns the ball
+            ball.transform.position = ballSpawnerPos;
             
         }
         else if (col.gameObject.tag == "PongPlayer2Goal")
         {
             
             Score2.ScoreCount2(+1);
-            ball.transform.position = new Vector3(0,-5.1500001f,27.5f);
+            ball.transform.position = ballSpawnerPos;
         }
 
     }
