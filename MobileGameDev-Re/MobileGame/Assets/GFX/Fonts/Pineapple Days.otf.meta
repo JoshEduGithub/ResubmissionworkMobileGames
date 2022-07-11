@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ebe5a6e2064c7fd429e3920bd595a1e6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Pineapple Days
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 99c3f5cd71c4caa4fa09d96c7120532e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
