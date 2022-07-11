@@ -5,8 +5,8 @@ using UnityEngine;
 public class ScoreScript : MonoBehaviour
 {
 
-    public UserInterface Score;
-    public UserInterface Score2;
+    public ScoreUI Score;
+    public ScoreUI Score2;
     public GameObject ball;
     public GameObject ballSpawner;
     private Vector3 ballSpawnerPos;

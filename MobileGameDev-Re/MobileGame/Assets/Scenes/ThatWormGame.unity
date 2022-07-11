@@ -771,6 +771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe914802da9a4b4daa1894557d36fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 0}
+  ScoreText2: {fileID: 0}
   pauseMenu: {fileID: 2063055310}
 --- !u!4 &462937136
 Transform:

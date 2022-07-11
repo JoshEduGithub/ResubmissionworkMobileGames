@@ -54,14 +54,14 @@ public class PlaceARObject : MonoBehaviour
             var placementPose = hits[0].pose;
             var camForward = arCamera.transform.forward;
             // flat object
-            camForward.y = 0;
+            //camForward.y = 0;
             // scale vector to be size of 1
             camForward = camForward.normalized;
 
             // rotate to face in front of camera player always see object
             placementPose.rotation = Quaternion.LookRotation(camForward);
 
-            // placees slightly above plane
+            // places slightly above plane
             var newPosition = placementPose.position;
             newPosition.y += 0.003f;
 

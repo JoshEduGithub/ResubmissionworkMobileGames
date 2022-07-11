@@ -7,8 +7,8 @@ public class BallScript : MonoBehaviour
 
     public Vector3 power;
     public Rigidbody ballRb;
-    public UserInterface Score;
-    public UserInterface Score2;
+    public ScoreUI Score;
+    public ScoreUI Score2;
     public GameObject ball;
     public GameObject ballSpawner;
     private Vector3 ballSpawnerPos;
@@ -18,6 +18,7 @@ public class BallScript : MonoBehaviour
     void Start()
     {
         ballRb.AddForce(power, ForceMode.Impulse);
+        
     }
 
     private void Awake()

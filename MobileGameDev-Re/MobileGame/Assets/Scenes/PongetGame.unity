@@ -1832,6 +1832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014069163}
   - component: {fileID: 1014069162}
+  - component: {fileID: 1014069164}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -1851,8 +1852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe914802da9a4b4daa1894557d36fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 1878283688}
-  ScoreText2: {fileID: 389041492}
   pauseMenu: {fileID: 1547993847}
 --- !u!4 &1014069163
 Transform:
@@ -1868,6 +1867,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014069164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014069161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af8e786522ff4b49b2afba1a2fb6258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 1878283688}
+  ScoreText2: {fileID: 389041492}
 --- !u!1 &1019718434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,8 +1953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 4210469630170708784, guid: 87677be0e16fb2e438d44b175f2b200c,
-    type: 3}
+  m_PlanePrefab: {fileID: 0}
   m_DetectionMode: -1
 --- !u!1 &1074545224
 GameObject:
@@ -2232,7 +2244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16dce2d68f539154ea8335a02e2894c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectSpawn: {fileID: 0}
+  objectSpawn: {fileID: 1505724149}
 --- !u!4 &1157618208
 Transform:
   m_ObjectHideFlags: 0
@@ -3769,7 +3781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -15, y: 0}
+  m_AnchoredPosition: {x: -15, y: 10}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1765783351
@@ -5104,7 +5116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008092797}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.94, y: -10, z: 0}
+  m_LocalPosition: {x: -5.94, y: -15, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 665256555}
@@ -5442,6 +5454,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8019380794515971500, guid: d0b3a6d0027b364499986bf13ea7dd2b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 8019380794515971502, guid: d0b3a6d0027b364499986bf13ea7dd2b,
         type: 3}
       propertyPath: m_Name
@@ -5456,12 +5473,12 @@ PrefabInstance:
         type: 3}
       propertyPath: Score
       value: 
-      objectReference: {fileID: 1014069162}
+      objectReference: {fileID: 1014069164}
     - target: {fileID: 8019380794515971503, guid: d0b3a6d0027b364499986bf13ea7dd2b,
         type: 3}
       propertyPath: Score2
       value: 
-      objectReference: {fileID: 1014069162}
+      objectReference: {fileID: 1014069164}
     - target: {fileID: 8019380794515971503, guid: d0b3a6d0027b364499986bf13ea7dd2b,
         type: 3}
       propertyPath: ballSpawner
