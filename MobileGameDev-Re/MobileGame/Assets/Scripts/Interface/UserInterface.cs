@@ -15,28 +15,12 @@ public class UserInterface : MonoBehaviour
     // getting the pause menu game object to interact with TMPbuttons and enable toggling of visiblity through code
     public GameObject pauseMenu;
 
-    // Audio 
-    private FMOD.Studio.Bus GameAudio;
-    [SerializeField] private float gameVolume;
-
-
-
     
     void Start()
     {
         // makes sure the game isn't paused when the scene is loaded
         PauseGame(false);
-        // gets volume from fmod bus
-        GameAudio.getVolume(out gameVolume);
     }
-
-    void Awake()
-    {
-        GameAudio = FMODUnity.RuntimeManager.GetBus("bus:/GameAudio");
-    }
-
-
-
 
     public void Restart()
     {
@@ -80,21 +64,5 @@ public class UserInterface : MonoBehaviour
     {
         Application.Quit();
     }
-
-    // set the quality of the game
-    public void setQuality(int qualityIndx)
-    {
-        QualitySettings.SetQualityLevel(qualityIndx);
-    }
-
-    // connects to the slider enabling dynamic changing of audio
-    public void VolumeController (float Volume)
-    {
-        // set game volume
-        GameAudio.setVolume(Volume);
-        // save game volume
-        GameAudio.getVolume(out gameVolume);
-    }
-
 
 }

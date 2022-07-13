@@ -21,11 +21,6 @@ public class BusController : MonoBehaviour
         busAController.getVolume(out busVolume);
     }
 
-    public void setVolume(float volume)
-    {
-        busAController.setVolume(volume);
-        busAController.getVolume(out busVolume);
-    }
 
     
 }

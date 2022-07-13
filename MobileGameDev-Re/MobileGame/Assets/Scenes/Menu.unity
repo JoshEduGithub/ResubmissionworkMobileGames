@@ -1731,8 +1731,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1327709226}
-        m_TargetAssemblyTypeName: UserInterface, Assembly-CSharp
+      - m_Target: {fileID: 1327709230}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
         m_MethodName: VolumeController
         m_Mode: 0
         m_Arguments:
@@ -2334,8 +2334,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1327709226}
-        m_TargetAssemblyTypeName: UserInterface, Assembly-CSharp
+      - m_Target: {fileID: 1327709230}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
         m_MethodName: setQuality
         m_Mode: 0
         m_Arguments:
@@ -2409,6 +2409,7 @@ GameObject:
   - component: {fileID: 1327709226}
   - component: {fileID: 1327709228}
   - component: {fileID: 1327709229}
+  - component: {fileID: 1327709230}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2429,7 +2430,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
-  gameVolume: 0
 --- !u!4 &1327709227
 Transform:
   m_ObjectHideFlags: 0
@@ -2478,6 +2478,21 @@ MonoBehaviour:
       Data3: 2113203893
       Data4: 1139657428
     Path: event:/ButtonAudio
+--- !u!114 &1327709230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327709225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36b23113c8ce314494ec62f0f06a323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameVolume: 0
+  VolumeSlider: {fileID: 848027542}
+  QualityDrop: {fileID: 1154304411}
 --- !u!1 &1382295756
 GameObject:
   m_ObjectHideFlags: 0
