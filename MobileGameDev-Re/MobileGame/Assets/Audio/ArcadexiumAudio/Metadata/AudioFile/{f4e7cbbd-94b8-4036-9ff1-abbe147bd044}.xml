@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f4e7cbbd-94b8-4036-9ff1-abbe147bd044}">
+		<property name="assetPath">
+			<value>GOAL.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.91428571428571426</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{effccf30-fcc2-4e3d-9e7f-f1b985680b08}</destination>
+		</relationship>
+	</object>
+</objects>

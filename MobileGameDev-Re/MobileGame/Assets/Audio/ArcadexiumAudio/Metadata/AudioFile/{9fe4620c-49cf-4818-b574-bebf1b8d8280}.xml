@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9fe4620c-49cf-4818-b574-bebf1b8d8280}">
+		<property name="assetPath">
+			<value>BackgroundMusic/610068__bloodpixelhero__game-music-loop-7.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>99.6923125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{effccf30-fcc2-4e3d-9e7f-f1b985680b08}</destination>
+		</relationship>
+	</object>
+</objects>

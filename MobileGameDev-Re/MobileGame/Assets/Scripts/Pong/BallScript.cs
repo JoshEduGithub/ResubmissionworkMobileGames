@@ -14,6 +14,8 @@ public class BallScript : MonoBehaviour
     private Vector3 ballSpawnerPos;
     private int maxSpeed = 5;
     private int minSpeed = 4;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,13 +51,19 @@ public class BallScript : MonoBehaviour
             // respawns the ball
             ball.transform.position = ballSpawnerPos;
             
+
+            
         }
         else if (col.gameObject.tag == "PongPlayer2Goal")
         {
             
             Score2.ScoreCount2(+1);
             ball.transform.position = ballSpawnerPos;
+            
         }
 
     }
+
+    
+
 }

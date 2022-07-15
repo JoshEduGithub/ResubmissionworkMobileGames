@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: Assets/Audio/ArcadexiumAudio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637932425570183884
+  lastModified: 637934234175842806
   FileSizes:
   - Name: Desktop
-    Value: 92128
+    Value: 1188480
   Exists: 1
+--- !u!114 &-5879397233509584894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GOAL
+  m_EditorClassIdentifier: 
+  Path: event:/GOAL
+  Guid:
+    Data1: 1109963790
+    Data2: 1209958375
+    Data3: 1203454640
+    Data4: 1120274226
+  Banks:
+  - {fileID: -9033074179564196322}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-580846226665496102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,13 +92,42 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 7910346000596890624}
   - {fileID: -580846226665496102}
+  - {fileID: 3169945118806049061}
+  - {fileID: -5879397233509584894}
   EditorParameters: []
   MasterBanks:
   - {fileID: -9033074179564196322}
   StringsBanks:
   - {fileID: 5175157841140990359}
-  cacheTime: 637932425570203897
+  cacheTime: 637934234175852822
   cacheVersion: 131591
+--- !u!114 &3169945118806049061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BallBounce
+  m_EditorClassIdentifier: 
+  Path: event:/BallBounce
+  Guid:
+    Data1: -8654495
+    Data2: 1150096995
+    Data3: -1597690966
+    Data4: -1983215502
+  Banks:
+  - {fileID: -9033074179564196322}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5175157841140990359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,10 +143,10 @@ MonoBehaviour:
   Path: Assets/Audio/ArcadexiumAudio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637932425570203897
+  lastModified: 637934234175852822
   FileSizes:
   - Name: Desktop
-    Value: 858
+    Value: 956
   Exists: 1
 --- !u!114 &7910346000596890624
 MonoBehaviour:

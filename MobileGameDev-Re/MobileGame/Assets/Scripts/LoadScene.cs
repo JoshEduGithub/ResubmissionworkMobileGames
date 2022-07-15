@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-// https://www.youtube.com/watch?v=3qlRgICRoeA 
-// video tutorial on creating a character selection system adapted into level selection on mobile device
 public class LoadScene : MonoBehaviour
 {
     // an object containing the available games that users can initiate
@@ -34,11 +32,12 @@ public class LoadScene : MonoBehaviour
         games[gameSelected].SetActive(false);
         gameSelected--;
         
+        // checks the current scene against scene collection
         if (gameSelected < 0)
         {
             gameSelected += games.Length;
         }
-        // sets new to false
+        // sets selected scene to active scene
         games[gameSelected].SetActive(true);
     }
 

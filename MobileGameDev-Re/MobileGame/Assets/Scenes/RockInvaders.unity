@@ -423,7 +423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1136970921}
-  gameVolume: 0
 --- !u!4 &1107223185
 Transform:
   m_ObjectHideFlags: 0
@@ -1591,7 +1590,7 @@ PrefabInstance:
     - target: {fileID: 6816545449859351777, guid: e01add46481d1c64ebc8872a5371d686,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6816545449859351777, guid: e01add46481d1c64ebc8872a5371d686,
         type: 3}
