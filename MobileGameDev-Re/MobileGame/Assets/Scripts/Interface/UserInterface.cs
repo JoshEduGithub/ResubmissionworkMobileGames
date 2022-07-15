@@ -14,12 +14,15 @@ public class UserInterface : MonoBehaviour
     [TooltipAttribute("Reference to the pause menu game object in the scene")]
     // getting the pause menu game object to interact with TMPbuttons and enable toggling of visiblity through code
     public GameObject pauseMenu;
+    
 
     
     void Start()
     {
         // makes sure the game isn't paused when the scene is loaded
         PauseGame(false);
+        
+
     }
 
     public void Restart()
@@ -43,6 +46,7 @@ public class UserInterface : MonoBehaviour
         {
             //Debug.Log("Unpaused");
             Time.timeScale = 1;
+          
         }
     }
 
@@ -64,5 +68,6 @@ public class UserInterface : MonoBehaviour
     {
         Application.Quit();
     }
+
 
 }

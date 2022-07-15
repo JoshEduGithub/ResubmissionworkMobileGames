@@ -39,6 +39,7 @@ public class NotifManager : MonoBehaviour
         {
             // notif title
             gameNotification.Title = title;
+            gameNotification.LargeIcon = "_logo";
             // notif body text
             gameNotification.Body = body;
             // time to wait before notif

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 // Unity tutorial demonstrating how to make a snake 3D style game
 // Has been adapted to use the mobile accelerator for movemement
 // Further development including score, death, obstacles and other events have been added ontop.
-// nolonger uses transform to alter position of mesh
 public class WormController : MonoBehaviour
 {
     public float speed = 10F;
@@ -33,17 +32,21 @@ public class WormController : MonoBehaviour
 
      }
 
-     
- 
      void FixedUpdate ()
      {
+        // disables character movement if the pause screen is active. it works ;)
+        if (GameObject.Find("PauseMenu") == true)
+        {
+            Time.timeScale = 0;
+        }
+        else if (GameObject.Find("PauseMenu") == false)
+        {
+            Time.timeScale = 1;
+        }
+        
         // move based on acceleromter direction
          Vector3 accelerate = Input.acceleration;
-         wormRB.AddForce(accelerate.x * speed, 0, accelerate.y * speed);
-
-
-
-
+         wormRB.AddForce(accelerate.x * speed, 0, accelerate.y * speed * Time.timeScale);
 
 
          // Store position history
