@@ -16,7 +16,7 @@ public class ScoreCounter : MonoBehaviour
        wormscore = 0;
        // loads the players highest score when the scene opens
        HighScore = PlayerPrefs.GetFloat("highScore", HighScore);
-       hScore.text = "Best: " + HighScore.ToString();
+       hScore.text = "BEST: " + HighScore.ToString();
 
     }
 
@@ -27,7 +27,7 @@ public class ScoreCounter : MonoBehaviour
             // setting the high score to the players 
             HighScore = wormscore;
             // writing high score to gui
-            hScore.text = "Best: " +  HighScore;
+            hScore.text = "BEST: " +  HighScore;
             // where the score will be saved
             PlayerPrefs.SetFloat("highScore", HighScore);
             // save the score to file
